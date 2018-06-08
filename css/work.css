@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Elsie");
+@import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
+@import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
+html, body {
+  overflow-x: hidden;
+  background-color: white;
+  background-color: #2e3538;
+  padding: 0;
+  margin: 0;
+  background-image: url("/img/flowers.jpg");
+  background-size: cover;
+}
+
+header {
+  width: 100vw;
+}
+
+nav#horizontal {
+  width: 100vw;
+  position: fixed;
+  z-index: 9999 !important;
+  top: 0;
+  left: 0;
+  height: 50px;
+  padding: 10px 40px 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+nav#horizontal ul.linksulName {
+  padding: 10px;
+}
+
+nav#horizontal ul.linksul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Oleo Script', sans-serif;
+  text-transform: lowercase;
+  padding: 0;
+  margin: 0;
+}
+
+nav#horizontal ul.linksul li.links {
+  list-style: none;
+  padding: 0;
+}
+
+nav#horizontal ul.linksul a {
+  text-decoration: none;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Yeseva One';
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+nav#horizontal ul.linksul a:hover {
+  background-color: #343f41;
+  height: 100%;
+}
+
+nav#horizontal li.nametag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav#horizontal li.nametag img#logo {
+  width: 255px;
+  top: 0;
+  padding-top: 25px;
+}
+
+nav#horizontal img.linksIcons {
+  width: 30px;
+}
+
+nav#dropdown {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  padding-left: 100px;
+  display: none;
+  width: 100vw;
+}
+
+nav#dropdown ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+nav#dropdown ul.list {
+  position: absolute;
+  width: 100vw;
+  background-color: #293133;
+  display: flex;
+  margin-top: 10px;
+  left: 0;
+}
+
+nav#dropdown li.listLi:hover {
+  background-color: #504e4e;
+}
+
+nav#dropdown li.listLi {
+  display: none;
+  padding: 10px;
+  font-size: 15px;
+  border-right: 1.5px dashed #f2f2f2;
+}
+
+nav#dropdown li.listLi:last-child {
+  border: none;
+}
+
+nav#dropdown li.hamburgerLi i {
+  font-size: 30px;
+}
+
+nav#dropdown li.hamburgerLi:hover li.listLi {
+  display: block;
+}
+
+nav#dropdown li {
+  list-style: none;
+  display: block;
+}
+
+nav#dropdown a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 900px) {
+  .links {
+    font-size: 15px;
+    display: none;
+  }
+  .linksul {
+    padding: 0;
+    display: none;
+  }
+  .skills ul {
+    flex-wrap: wrap;
+    overflow-x: auto;
+  }
+  .footerUl {
+    display: none;
+  }
+  nav#dropdown {
+    display: inline;
+  }
+  div.workPage {
+    width: 100vw;
+    margin: 0;
+  }
+  div.work ul {
+    flex-wrap: wrap;
+  }
+  div.work img {
+    width: 100vw;
+    height: 200px;
+  }
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.workPage {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.work {
+  font-family: 'Playfair Display';
+  font-size: 10px;
+  width: 100%;
+}
+
+.work img {
+  width: 380px;
+  height: 250px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.work .fas {
+  position: absolute;
+  font-size: 50px;
+  padding-top: 50px;
+  opacity: 1;
+}
+
+.work ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.work li {
+  display: flex;
+  flex-direction: column;
+}
+
+#skills {
+  width: 100%;
+}
+
+#skills h1 {
+  color: #d9d9d9;
+  font-family: 'Elsie';
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  font-size: 8vh;
+}
+
+#skills ul {
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-image: none;
+  list-style: none;
+}
+
+#skills ul li {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  float: left;
+}
+
+#skills ul li i {
+  font-size: 90px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #2e3538;
+  width: 100vw;
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+}
+
+footer span {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  align-items: center;
+}
+
+footer h5 {
+  font-family: 'Playfair Display', serif;
+  color: #f2f2f2;
+  display: inline;
+  font-size: 60%;
+  letter-spacing: 2px;
+  padding-bottom: .5vh;
+}
+
+footer .footerUl {
+  bottom: 0;
+  padding-right: 30px;
+  margin: 0;
+}
+
+footer ul {
+  display: inline;
+}
+
+footer li {
+  display: inline;
+}
+
+footer i {
+  color: #f2f2f2;
+  padding-top: 6px;
+  padding-left: 10px;
+  font-size: 80%;
+}
+
+footer .fab:hover, footer .fas:hover {
+  color: #5d5b5b;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f2f2f2;
+  border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #434242;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: indigo;
+}
+/*# sourceMappingURL=work.css.map */

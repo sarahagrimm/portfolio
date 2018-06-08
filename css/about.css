@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Milonga|Peralta|Poppins|Oswald");
+@import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
+@import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
+html, body {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1508921108053-9f757ead871c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=80d14e1a55b5c3c7e5b71a2b3643c281&auto=format&fit=crop&w=1050&q=80");
+  background: url("https://cdn.pixabay.com/photo/2018/01/21/01/46/architecture-3095716_1280.jpg");
+  background-size: cover;
+  background-position: left top;
+  background-attachment: fixed;
+}
+
+html h1, body h1 {
+  color: #1a1919;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  margin-top: auto;
+  text-shadow: 0 0 20px lightblue;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  font-size: 8vh;
+}
+
+html hr, body hr {
+  width: 60%;
+  height: 2px;
+  background-color: #343232;
+}
+
+html nav#horizontal, body nav#horizontal {
+  width: 100vw;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 50px;
+  padding: 10px 40px 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+html nav#horizontal ul.linksulName, body nav#horizontal ul.linksulName {
+  padding: 10px;
+}
+
+html nav#horizontal ul.linksul, body nav#horizontal ul.linksul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Oleo Script', sans-serif;
+  text-transform: lowercase;
+  padding: 0;
+  margin: 0;
+}
+
+html nav#horizontal ul.linksul li.links, body nav#horizontal ul.linksul li.links {
+  list-style: none;
+  padding: 0;
+}
+
+html nav#horizontal ul.linksul a, body nav#horizontal ul.linksul a {
+  text-decoration: none;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Yeseva One';
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+html nav#horizontal ul.linksul a:hover, body nav#horizontal ul.linksul a:hover {
+  background-color: #343f41;
+  height: 100%;
+}
+
+html nav#horizontal li.nametag, body nav#horizontal li.nametag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+html nav#horizontal li.nametag img#logo, body nav#horizontal li.nametag img#logo {
+  width: 255px;
+  height: 125px;
+  top: 0;
+  padding-top: 45px;
+}
+
+html nav#horizontal img.linksIcons, body nav#horizontal img.linksIcons {
+  width: 30px;
+}
+
+html nav#dropdown, body nav#dropdown {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 250px;
+  display: none;
+  width: 100vw;
+}
+
+html nav#dropdown ul, body nav#dropdown ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+html nav#dropdown ul.list, body nav#dropdown ul.list {
+  position: absolute;
+  width: 100vw;
+  background-color: #293133;
+  display: flex;
+  margin-top: 10px;
+  left: 0;
+}
+
+html nav#dropdown li.listLi:hover, body nav#dropdown li.listLi:hover {
+  background-color: #403f3f;
+}
+
+html nav#dropdown li.listLi, body nav#dropdown li.listLi {
+  display: none;
+  padding: 10px;
+  font-size: 15px;
+  border-right: 1.5px dashed #f2f2f2;
+}
+
+html nav#dropdown li.listLi:last-child, body nav#dropdown li.listLi:last-child {
+  border: none;
+}
+
+html nav#dropdown li.hamburgerLi i, body nav#dropdown li.hamburgerLi i {
+  font-size: 30px;
+}
+
+html nav#dropdown li.hamburgerLi:hover li.listLi, body nav#dropdown li.hamburgerLi:hover li.listLi {
+  display: block;
+}
+
+html nav#dropdown li, body nav#dropdown li {
+  list-style: none;
+  display: block;
+}
+
+html nav#dropdown a, body nav#dropdown a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  html footer, body footer {
+    width: 100vw;
+  }
+  html .links, body .links {
+    font-size: 15px;
+    display: none;
+  }
+  html .linksul, body .linksul {
+    padding: 0;
+    display: none;
+  }
+  html .footerUl, body .footerUl {
+    display: none;
+  }
+  html nav#dropdown, body nav#dropdown {
+    display: inline;
+  }
+  html div.about, body div.about {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    height: 100%;
+  }
+  html html, html body, body html, body body {
+    overflow: visible;
+  }
+}
+
+html main, body main {
+  margin-top: 50px;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+html span.banner, body span.banner {
+  width: 70vw;
+  height: 40px;
+  background-color: #2e3538;
+  position: absolute;
+  margin-top: 100px;
+}
+
+html .about, body .about {
+  background-color: #e1eae7;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  width: 70vw;
+  margin-top: 100px;
+  height: 475px;
+  box-shadow: 0 0 50px black;
+  border-radius: 15px;
+}
+
+html .about .aboutInfo, body .about .aboutInfo {
+  width: 100%;
+  display: block;
+}
+
+html .about .aboutInfo i, body .about .aboutInfo i {
+  font-size: 25px;
+}
+
+html .about .aboutInfo img, body .about .aboutInfo img {
+  width: 40px;
+}
+
+html .about .photo, body .about .photo {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+html .about .photo div.facts, body .about .photo div.facts {
+  text-align: center;
+  padding: 20px;
+}
+
+html .about .photo div.facts h3, body .about .photo div.facts h3 {
+  font-size: 100%;
+}
+
+html .about .photo div.facts img.pin, body .about .photo div.facts img.pin {
+  width: 25px;
+  height: 25px;
+}
+
+html .about img.headshot, body .about img.headshot {
+  padding: 30px 0 0 20px;
+  width: 300px;
+  height: 301px;
+}
+
+html .about div.textBox, body .about div.textBox {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: black;
+  font-size: 100%;
+  padding: 60px;
+  height: 100%;
+}
+
+html .about div.textBox span, body .about div.textBox span {
+  font-weight: bold;
+}
+
+html .about div.textBox .row, body .about div.textBox .row {
+  display: flex;
+  flex-direction: row;
+}
+
+html .about div.textBox .row i, body .about div.textBox .row i {
+  font-size: 200%;
+  padding: 20px;
+}
+
+html .about span.passion, body .about span.passion {
+  color: red;
+}
+
+html .about span.love, body .about span.love {
+  color: indigo;
+}
+
+footer {
+  background-color: #2e3538;
+  width: 100vw;
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+}
+
+footer span {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+
+footer h5 {
+  font-family: 'Playfair Display', serif;
+  color: #f2f2f2;
+  display: inline;
+  font-size: 65%;
+  letter-spacing: 2px;
+  padding-bottom: .5vh;
+}
+
+footer .footerUl {
+  bottom: 0;
+  padding-right: 30px;
+  margin: 0;
+}
+
+footer ul {
+  display: inline;
+}
+
+footer li {
+  display: inline;
+}
+
+footer i {
+  color: #f2f2f2;
+  padding-top: 6px;
+  padding-left: 10px;
+  font-size: 80%;
+}
+
+footer .fab:hover, footer .fas:hover {
+  color: #4d4c4c;
+}
+/*# sourceMappingURL=about.css.map */
