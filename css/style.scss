@@ -22,16 +22,7 @@ html, body {
 }
 
 
-    // MOBILE ONLY
-    @media only screen and (max-width: 600px) {
-        h1.sarah { font-size: 30px !important; width: 75vw; }
-        h1.symbol { font-size: 70px !important; }
-        ul.linksul { display: none !important; }
-        [class*="workImg"] { width: 100%; }
-        .school { display: none !important; }
-        .blackwhite { display: none !important; }
-        .aboutMe { p { width: 100vw !important; } }
-      }
+
 
 //Navigation
 nav#horizontal {
@@ -305,10 +296,12 @@ nav#horizontal {
     position: fixed;
     right: 20px;
     bottom: 50px;
-    color: $white;
+    color: #C269A5;
     background: none;
     border: none; 
     cursor: pointer;
+    text-shadow: 0 0 20px black;
+    z-index: 9999;
     
     i {
         font-size: 75px;
@@ -321,7 +314,6 @@ main {
     justify-content: center;
     flex-direction: column;
     background-color: $white;
-    overflow-y: hidden;
 
     div.spacingDiv {
         height: 75px;
@@ -330,7 +322,7 @@ main {
     div.parallax{
         height: 50vh;
         background-image: url('mushroom.jpg');
-        background-image: url('/img/mushroom.jpg');
+        // background-image: url('/img/mushroom.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -338,7 +330,7 @@ main {
     }
 
     .name {
-        margin-top: 100px;
+        margin-top: 350px;
         position: absolute;
         display: flex;
         justify-content: center;
@@ -348,6 +340,7 @@ main {
         flex-direction: column;
         width: 100vw;
         top: 0;
+        
         h1.sarah {
             // transform: rotate(-7deg);
             color: $white;
@@ -358,18 +351,12 @@ main {
             letter-spacing: 2px;
             height: 100px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            align-self: center;
             // letter-spacing: -10px;
-
-        }
-
-        h1.symbol {
-            font-size: 75px;
-            padding: 20px;
-            margin-top: 250px;
-            color: $white;
-            text-shadow: 0 0 20px black;
-            font-size: 120px;
-            font-family: 'Bowlby One';
 
         }
 
@@ -449,7 +436,7 @@ main {
             }
 
         img.blackwhite {
-            height: 600px;
+            height: 450px;
         }
 
 
@@ -826,6 +813,7 @@ div.contact {
 .footerTwo {
     background-color: lighten($blueblack, 10%);
     height: 200px;
+    width: 100vw;
     p {
         color: $white;
         text-align: center;
@@ -905,6 +893,20 @@ li{
 // ::-webkit-scrollbar-thumb:hover {
 //     background: indigo; 
 // }
+
+    // MOBILE ONLY
+    @media screen and (max-device-width: 320px) and (orientation: portrait){
+        h1.sarah { font-size: 30px !important; width: 75vw !important; }
+        [class*="workImg"] { width: 100%; }
+        div.school { display: none !important; }
+        img.blackwhite { display: none !important; }
+        div.aboutMe { p { width: 100vw !important; text-align: center; } }
+        nav#horizontal { height: 55px !important; }
+        img#logo { width: 75px !important; }
+        div.spacingDiv { display: none !important; }
+        div.name { margin-top: 200px !important; }
+        div.parallax { height: 250px !important; }
+      }
 
 @keyframes floatDown {
     from { padding-top: 0; opacity: 0; }
