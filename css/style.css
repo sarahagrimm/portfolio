@@ -15,18 +15,27 @@ html, body {
 }
 
 @media only screen and (max-width: 600px) {
-  .name {
-    margin-top: -300px !important;
-  }
   h1.sarah {
     font-size: 30px !important;
     width: 75vw;
+  }
+  h1.symbol {
+    font-size: 70px !important;
   }
   ul.linksul {
     display: none !important;
   }
   [class*="workImg"] {
     width: 100%;
+  }
+  .school {
+    display: none !important;
+  }
+  .blackwhite {
+    display: none !important;
+  }
+  .aboutMe p {
+    width: 100vw !important;
   }
 }
 
@@ -325,6 +334,7 @@ main div.spacingDiv {
 main div.parallax {
   height: 50vh;
   background-image: url("mushroom.jpg");
+  background-image: url("/img/mushroom.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
