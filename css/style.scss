@@ -57,14 +57,9 @@ nav#horizontal {
         li.links-fb {
             list-style: none;
             padding: 24px 0;
-
-                display: inline-block;
-                vertical-align: middle;
-                transform: perspective(1px) translateZ(0);
-                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-                position: relative;
-                transition-property: color;
-                transition-duration: 0.3s;
+            transform: perspective(1px) translateZ(0);
+            transition-property: color;
+            transition-duration: 0.3s;
               }
               .links-fb:before {
                 content: "";
@@ -76,15 +71,11 @@ nav#horizontal {
                 bottom: 0;
                 background: #4367B0;
                 transform: scaleX(0);
-                transform-origin: 0 50%;
-                transition-property: transform;
                 transition-duration: 0.3s;
                 transition-timing-function: ease-out;
               }
-              .links-fb:hover, .links-fb:focus, .links-fb:active {
-                color: white;
-              }
-              .links-fb:hover:before, .links-fb:focus:before, .links-fb:active:before {
+
+              .links-fb:hover:before {
                 transform: scaleX(1);
               }
 
@@ -93,14 +84,9 @@ nav#horizontal {
               li.links-insta {
                 list-style: none;
                 padding: 24px 0;
-    
-                    display: inline-block;
-                    vertical-align: middle;
-                    transform: perspective(1px) translateZ(0);
-                    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-                    position: relative;
-                    transition-property: color;
-                    transition-duration: 0.3s;
+                transform: perspective(1px) translateZ(0);
+                transition-property: color;
+                transition-duration: 0.3s;
                   }
                   .links-insta:before {
                     content: "";
@@ -112,10 +98,8 @@ nav#horizontal {
                     bottom: 0;
                     background: #C130A0;
                     transform: scaleX(0);
-                    transform-origin: 0 50%;
                     transition-property: transform;
                     transition-duration: 0.3s;
-                    transition-timing-function: ease-out;
                   }
                   .links-insta:hover, .links-insta:focus, .links-insta:active {
                     color: white;
@@ -320,9 +304,10 @@ main {
     }
 
     div.parallax{
-        height: 50vh;
-        background-image: url('mushroom.jpg');
-        // background-image: url('/img/mushroom.jpg');
+        height: 75vh;
+        background-image: url('/img/mushroom.jpg');
+        background-image: url('portfolio/img/Mushroom.jpg');
+        // background-image: url('mushroom.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -330,7 +315,7 @@ main {
     }
 
     .name {
-        margin-top: 350px;
+        margin-top: 150px;
         position: absolute;
         display: flex;
         justify-content: center;
@@ -349,7 +334,7 @@ main {
             font-family: 'Bowlby One';
             text-transform: uppercase;
             letter-spacing: 2px;
-            height: 100px;
+            // height: 100px;
             text-align: center;
             display: flex;
             justify-content: center;
