@@ -5,7 +5,6 @@
 html, body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: #272626;
   padding: 0;
   margin: 0;
 }
@@ -34,13 +33,7 @@ nav#horizontal ul.linksulName {
 
 nav#horizontal ul.linksul {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  font-family: 'Oleo Script', sans-serif;
-  text-transform: lowercase;
-  padding: 0;
-  margin: 0;
-  padding-right: 20px;
+  margin: 0 20px;
 }
 
 nav#horizontal ul.linksul li.links-fb {
@@ -102,11 +95,7 @@ nav#horizontal ul.linksul .links-insta:hover:before, nav#horizontal ul.linksul .
 nav#horizontal ul.linksul li.links-twitter {
   list-style: none;
   padding: 24px 0;
-  display: inline-block;
-  vertical-align: middle;
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
   transition-property: color;
   transition-duration: 0.3s;
 }
@@ -121,10 +110,8 @@ nav#horizontal ul.linksul .links-twitter:before {
   bottom: 0;
   background: #21A1F0;
   transform: scaleX(0);
-  transform-origin: 0 50%;
   transition-property: transform;
   transition-duration: 0.3s;
-  transition-timing-function: ease-out;
 }
 
 nav#horizontal ul.linksul .links-twitter:hover, nav#horizontal ul.linksul .links-twitter:focus, nav#horizontal ul.linksul .links-twitter:active {
@@ -138,11 +125,7 @@ nav#horizontal ul.linksul .links-twitter:hover:before, nav#horizontal ul.linksul
 nav#horizontal ul.linksul li.links-mail {
   list-style: none;
   padding: 24px 0;
-  display: inline-block;
-  vertical-align: middle;
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
   transition-property: color;
   transition-duration: 0.3s;
 }
@@ -157,10 +140,8 @@ nav#horizontal ul.linksul .links-mail:before {
   bottom: 0;
   background: #C269A5;
   transform: scaleX(0);
-  transform-origin: 0 50%;
   transition-property: transform;
   transition-duration: 0.3s;
-  transition-timing-function: ease-out;
 }
 
 nav#horizontal ul.linksul .links-mail:hover, nav#horizontal ul.linksul .links-mail:focus, nav#horizontal ul.linksul .links-mail:active {
@@ -174,11 +155,7 @@ nav#horizontal ul.linksul .links-mail:hover:before, nav#horizontal ul.linksul .l
 nav#horizontal ul.linksul li.links-linked {
   list-style: none;
   padding: 24px 0;
-  display: inline-block;
-  vertical-align: middle;
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
   transition-property: color;
   transition-duration: 0.3s;
 }
@@ -193,10 +170,8 @@ nav#horizontal ul.linksul .links-linked:before {
   bottom: 0;
   background: #0577B4;
   transform: scaleX(0);
-  transform-origin: 0 50%;
   transition-property: transform;
   transition-duration: 0.3s;
-  transition-timing-function: ease-out;
 }
 
 nav#horizontal ul.linksul .links-linked:hover, nav#horizontal ul.linksul .links-linked:focus, nav#horizontal ul.linksul .links-linked:active {
@@ -210,11 +185,7 @@ nav#horizontal ul.linksul .links-linked:hover:before, nav#horizontal ul.linksul 
 nav#horizontal ul.linksul li.links-git {
   list-style: none;
   padding: 24px 0;
-  display: inline-block;
-  vertical-align: middle;
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
   transition-property: color;
   transition-duration: 0.3s;
 }
@@ -229,10 +200,8 @@ nav#horizontal ul.linksul .links-git:before {
   bottom: 0;
   background: #23292D;
   transform: scaleX(0);
-  transform-origin: 0 50%;
   transition-property: transform;
   transition-duration: 0.3s;
-  transition-timing-function: ease-out;
 }
 
 nav#horizontal ul.linksul .links-git:hover, nav#horizontal ul.linksul .links-git:focus, nav#horizontal ul.linksul .links-git:active {
@@ -252,8 +221,6 @@ nav#horizontal a {
 
 li.nametag {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
 }
 
@@ -279,20 +246,21 @@ li.nametag img#logo {
   font-size: 75px;
 }
 
-main {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #f2f2f2;
-}
-
 main div.spacingDiv {
   height: 75px;
 }
 
 main div.parallax {
-  height: 75vh;
+  height: 50vh;
+  background-image: url("https://i.imgur.com/nxTi4Qv.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main div.parallaxOne {
+  height: 100vh;
   background-image: url("https://i.imgur.com/nxTi4Qv.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -301,16 +269,8 @@ main div.parallax {
 }
 
 main .name {
-  margin-top: 150px;
+  margin-top: 100px;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  flex-direction: column;
-  width: 100vw;
-  top: 0;
 }
 
 main .name h1.sarah {
@@ -319,13 +279,7 @@ main .name h1.sarah {
   font-size: 450%;
   font-family: 'Bowlby One';
   text-transform: uppercase;
-  letter-spacing: 2px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  align-self: center;
 }
 
 main .name p {
@@ -385,6 +339,7 @@ main div.textBox div.aboutMe div.school {
   flex-direction: column;
   align-items: center;
   padding: 0;
+  margin-right: 100px;
 }
 
 main div.textBox div.aboutMe img.westhills {
@@ -440,8 +395,11 @@ main i {
 
 main ul.skillsStuff {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  background-color: white;
+  margin-right: 60px;
 }
 
 main ul.skillsStuff li {
@@ -460,12 +418,7 @@ main ul.skillsStuff i {
 }
 
 div.skills {
-  padding-bottom: 25px;
-  padding-right: 60px;
-}
-
-div.skills ul {
-  flex-wrap: wrap;
+  background-color: white;
 }
 
 div.skills h1 {
@@ -496,6 +449,10 @@ div.skills h1 {
   width: 510px;
 }
 
+.workPage .logoWork {
+  background-color: #272626;
+}
+
 div.contact h1 {
   font-family: 'Bowlby One';
   padding: 20px;
@@ -517,6 +474,7 @@ div.contact ul.linksul2 {
   padding-right: 20px;
   height: 300px;
   width: 100vw;
+  background-color: white;
 }
 
 div.contact ul.linksul2 li.links-fb {
@@ -810,11 +768,7 @@ footer .fab:hover, footer .fas:hover {
   color: #403f3f;
 }
 
-@media screen and (max-device-width: 320px) and (orientation: portrait) {
-  h1.sarah {
-    font-size: 30px !important;
-    width: 75vw !important;
-  }
+@media screen and (max-device-width: 600px) and (orientation: portrait) {
   [class*="workImg"] {
     width: 100%;
   }
@@ -837,8 +791,11 @@ footer .fab:hover, footer .fas:hover {
   div.spacingDiv {
     display: none !important;
   }
-  div.name {
-    margin-top: 200px !important;
+  h1.sarah {
+    font-size: 35px !important;
+    width: 100vw !important;
+    margin-top: 50px;
+    height: 100vw !important;
   }
   div.parallax {
     height: 250px !important;
