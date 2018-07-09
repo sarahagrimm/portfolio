@@ -41,9 +41,15 @@ html nav#horizontal, body nav#horizontal {
   left: 0;
   height: 50px;
   padding: 10px 40px 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 html nav#horizontal ul.linksulName, body nav#horizontal ul.linksulName {
@@ -51,9 +57,14 @@ html nav#horizontal ul.linksulName, body nav#horizontal ul.linksulName {
 }
 
 html nav#horizontal ul.linksul, body nav#horizontal ul.linksul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   font-family: 'Oleo Script', sans-serif;
   text-transform: lowercase;
   padding: 0;
@@ -80,10 +91,19 @@ html nav#horizontal ul.linksul a:hover, body nav#horizontal ul.linksul a:hover {
 }
 
 html nav#horizontal li.nametag, body nav#horizontal li.nametag {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 html nav#horizontal li.nametag img#logo, body nav#horizontal li.nametag img#logo {
@@ -108,15 +128,22 @@ html nav#dropdown, body nav#dropdown {
 }
 
 html nav#dropdown ul, body nav#dropdown ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 html nav#dropdown ul.list, body nav#dropdown ul.list {
   position: absolute;
   width: 100vw;
   background-color: #293133;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
   left: 0;
@@ -179,7 +206,10 @@ html nav#dropdown a, body nav#dropdown a {
     width: 100vw;
     padding: 0;
     margin: 0;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100%;
   }
   html html, html body, body html, body body {
@@ -191,8 +221,12 @@ html main, body main {
   margin-top: 50px;
   width: 100vw;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 html span.banner, body span.banner {
@@ -205,16 +239,27 @@ html span.banner, body span.banner {
 
 html .about, body .about {
   background-color: #e1eae7;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Playfair Display', serif;
   width: 70vw;
   margin-top: 100px;
   height: 475px;
-  box-shadow: 0 0 50px black;
+  -webkit-box-shadow: 0 0 50px black;
+          box-shadow: 0 0 50px black;
   border-radius: 15px;
 }
 
@@ -232,12 +277,22 @@ html .about .aboutInfo img, body .about .aboutInfo img {
 }
 
 html .about .photo, body .about .photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 50vw;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 html .about .photo div.facts, body .about .photo div.facts {
@@ -261,9 +316,14 @@ html .about img.headshot, body .about img.headshot {
 }
 
 html .about div.textBox, body .about div.textBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: center;
-  justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: black;
   font-size: 100%;
   padding: 60px;
@@ -275,8 +335,13 @@ html .about div.textBox span, body .about div.textBox span {
 }
 
 html .about div.textBox .row, body .about div.textBox .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 html .about div.textBox .row i, body .about div.textBox .row i {
@@ -301,8 +366,12 @@ footer {
 }
 
 footer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 30px;
 }
 

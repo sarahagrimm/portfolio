@@ -8,18 +8,30 @@ img.forest {
 img.goldengate {
   width: 105vw;
   height: 105vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-self: center;
-  filter: grayscale(60%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-filter: grayscale(60%);
+          filter: grayscale(60%);
 }
 
 span#textBanner {
   position: absolute;
   height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-self: center;
-  flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100vw;
 }
 
@@ -40,9 +52,14 @@ h2 {
   letter-spacing: 15px;
   margin: 0 auto;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   z-index: 9997;
 }
 
@@ -88,28 +105,49 @@ h4 a:hover {
 
 .aboutmePage div.about {
   background-color: #e0ebe8;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Playfair Display', serif;
   width: 70vw;
   margin-top: 100px;
   height: 475px;
-  box-shadow: 0 0 50px black;
+  -webkit-box-shadow: 0 0 50px black;
+          box-shadow: 0 0 50px black;
   border-radius: 15px;
   margin-left: 200px;
   margin-bottom: 100px;
 }
 
 .aboutmePage div.about div.photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 50vw;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .aboutmePage div.about div.facts {
@@ -133,9 +171,16 @@ h4 a:hover {
 }
 
 .socialMedia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
 }
 
@@ -168,8 +213,11 @@ h4 a:hover {
 #skills ul {
   background-color: #e0ebe8;
   padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style-image: none;
   list-style: none;
 }
@@ -188,15 +236,18 @@ h4 a:hover {
 }
 
 .fallingI {
-  animation: floatDown 1s ease 2s forwards;
+  -webkit-animation: floatDown 1s ease 2s forwards;
+          animation: floatDown 1s ease 2s forwards;
 }
 
 .fallingSymbol {
-  animation: floatDown 1s ease 2.5s forwards;
+  -webkit-animation: floatDown 1s ease 2.5s forwards;
+          animation: floatDown 1s ease 2.5s forwards;
 }
 
 .fallingM {
-  animation: floatDown 1s ease 2.9s forwards;
+  -webkit-animation: floatDown 1s ease 2.9s forwards;
+          animation: floatDown 1s ease 2.9s forwards;
 }
 
 .space {
@@ -204,23 +255,28 @@ h4 a:hover {
 }
 
 .fallingS {
-  animation: floatDown 1s ease 2.5s forwards;
+  -webkit-animation: floatDown 1s ease 2.5s forwards;
+          animation: floatDown 1s ease 2.5s forwards;
 }
 
 .fallingA {
-  animation: floatDown 1s ease 2.65s forwards;
+  -webkit-animation: floatDown 1s ease 2.65s forwards;
+          animation: floatDown 1s ease 2.65s forwards;
 }
 
 .fallingR {
-  animation: floatDown 1s ease 3s forwards;
+  -webkit-animation: floatDown 1s ease 3s forwards;
+          animation: floatDown 1s ease 3s forwards;
 }
 
 .fallingA2 {
-  animation: floatDown 1s ease 2.5s forwards;
+  -webkit-animation: floatDown 1s ease 2.5s forwards;
+          animation: floatDown 1s ease 2.5s forwards;
 }
 
 .fallingH {
-  animation: floatDown 1s ease 2.25s forwards;
+  -webkit-animation: floatDown 1s ease 2.25s forwards;
+          animation: floatDown 1s ease 2.25s forwards;
 }
 
 .fa {

@@ -243,11 +243,10 @@ nav#horizontal {
     position: fixed;
     right: 20px;
     bottom: 50px;
-    color: #C269A5;
+    color: $black;
     background: none;
     border: none; 
     cursor: pointer;
-    text-shadow: 0 0 20px black;
     z-index: 9999;
     
     i {
@@ -263,7 +262,7 @@ main {
 
     div.parallax {
         height: 50vh;
-        background-image: url('https://i.imgur.com/nxTi4Qv.jpg');
+        background-image: url('https://cdn.pixabay.com/photo/2017/04/14/16/43/red-fox-2230730_1280.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -272,7 +271,7 @@ main {
 
     div.parallaxOne {
         height: 100vh;
-        background-image: url('https://i.imgur.com/nxTi4Qv.jpg');
+        background-image: url('https://i.imgur.com/UPuip7i.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -285,11 +284,11 @@ main {
         
         h1.sarah {
             color: $white;
-            text-shadow: 0 0 20px black;
+            text-shadow: 2px 2px 4px black;
             font-size: 450%;
             font-family: 'Bowlby One';
             text-transform: uppercase;
-            // letter-spacing: 2px;
+            letter-spacing: 10px;
             text-align: center;
 
         }
@@ -328,9 +327,10 @@ main {
     div.textBox {
         width: 100vw;
         font-family: 'Playfair Display';
-        color: black;
+        color: $blueblack;
         background-color: white;
         margin: 0;
+        font-size: 100px;
 
 
         h1 {
@@ -347,8 +347,10 @@ main {
         div.aboutMe {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            // justify-content: space-around;
             margin: 0;
+            // width: 100vw;
+            
 
 
             div.school {
@@ -378,7 +380,7 @@ main {
 
         p {
             padding: 20px 30px;
-            width: 60vw;
+            width: 95vw;
             font-weight: 500;
             font-size: 19px;
                     span {
@@ -387,7 +389,7 @@ main {
                     span.red {
                         color: red;
                         a {
-                            color: red;
+                            color: hsl(10, 98%, 24%);
                             text-decoration: none;
                         }
 
@@ -400,7 +402,7 @@ main {
                         color: indigo;
                     }
                     span.blue {
-                        color: blue;
+                        color: hsl(240, 100%, 40%);
                     }
                 
                 
@@ -424,6 +426,7 @@ main {
         li {
             list-style: none;
             padding-top: 20px;
+            padding-bottom: 20px;
             transition: 1s;
             transform-style: preserve-3d;
         }
@@ -454,6 +457,7 @@ div.skills {
 
 
 .workPage {
+    background-color: $black;
 
     h1 {
         font-family: 'Bowlby One';
@@ -470,16 +474,40 @@ div.skills {
         }
     }
 
-
-
-img {
-    height: 300px;
-    width: 510px;
-}
-
 .logoWork {
     background-color: $black;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.column img {
+    vertical-align: middle;
+    height: 300px;
+    width: 500px !important;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 800px) {
+    .column img {
+      flex: 50%;
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column img {
+      flex: 100%;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
 }
 
 // WORK
@@ -833,9 +861,9 @@ li{
 // }
 
     // MOBILE ONLY
-    @media screen and (max-device-width: 600px) and (orientation: portrait){
+    @media screen and (max-width: 1200px) and (orientation: portrait){
         
-        [class*="workImg"] { width: 100%; }
+        [class*="workImg"] { width: auto !important; }
         div.school { display: none !important; }
         img.blackwhite { display: none !important; }
         div.aboutMe { p { width: 100vw !important; text-align: center; } }
@@ -844,6 +872,7 @@ li{
         div.spacingDiv { display: none !important; }
         h1.sarah { font-size: 35px !important; width: 100vw !important; margin-top: 50px; height: 100vw !important;}
         div.parallax { height: 250px !important; }
+        main { float: none !important; width: auto !important; }
       }
 
 @keyframes floatDown {

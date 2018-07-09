@@ -10,7 +10,8 @@ html, body {
 }
 
 * {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 nav#horizontal {
@@ -21,10 +22,17 @@ nav#horizontal {
   top: 0;
   left: 0;
   height: 75px;
-  box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px 3px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav#horizontal ul.linksulName {
@@ -32,6 +40,8 @@ nav#horizontal ul.linksulName {
 }
 
 nav#horizontal ul.linksul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 20px;
 }
@@ -39,9 +49,12 @@ nav#horizontal ul.linksul {
 nav#horizontal ul.linksul li.links-fb {
   list-style: none;
   padding: 24px 0;
-  transform: perspective(1px) translateZ(0);
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-transition-property: color;
   transition-property: color;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 nav#horizontal ul.linksul .links-fb:before {
@@ -53,21 +66,28 @@ nav#horizontal ul.linksul .links-fb:before {
   right: 0;
   bottom: 0;
   background: #4367B0;
-  transform: scaleX(0);
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 nav#horizontal ul.linksul .links-fb:hover:before {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 nav#horizontal ul.linksul li.links-insta {
   list-style: none;
   padding: 24px 0;
-  transform: perspective(1px) translateZ(0);
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-transition-property: color;
   transition-property: color;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 nav#horizontal ul.linksul .links-insta:before {
@@ -79,9 +99,14 @@ nav#horizontal ul.linksul .links-insta:before {
   right: 0;
   bottom: 0;
   background: #C130A0;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
-  transition-duration: 0.3s;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 nav#horizontal ul.linksul .links-insta:hover, nav#horizontal ul.linksul .links-insta:focus, nav#horizontal ul.linksul .links-insta:active {
@@ -89,15 +114,19 @@ nav#horizontal ul.linksul .links-insta:hover, nav#horizontal ul.linksul .links-i
 }
 
 nav#horizontal ul.linksul .links-insta:hover:before, nav#horizontal ul.linksul .links-insta:focus:before, nav#horizontal ul.linksul .links-insta:active:before {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 nav#horizontal ul.linksul li.links-twitter {
   list-style: none;
   padding: 24px 0;
-  transform: perspective(1px) translateZ(0);
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-transition-property: color;
   transition-property: color;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 nav#horizontal ul.linksul .links-twitter:before {
@@ -109,9 +138,14 @@ nav#horizontal ul.linksul .links-twitter:before {
   right: 0;
   bottom: 0;
   background: #21A1F0;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
-  transition-duration: 0.3s;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 nav#horizontal ul.linksul .links-twitter:hover, nav#horizontal ul.linksul .links-twitter:focus, nav#horizontal ul.linksul .links-twitter:active {
@@ -119,15 +153,19 @@ nav#horizontal ul.linksul .links-twitter:hover, nav#horizontal ul.linksul .links
 }
 
 nav#horizontal ul.linksul .links-twitter:hover:before, nav#horizontal ul.linksul .links-twitter:focus:before, nav#horizontal ul.linksul .links-twitter:active:before {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 nav#horizontal ul.linksul li.links-mail {
   list-style: none;
   padding: 24px 0;
-  transform: perspective(1px) translateZ(0);
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-transition-property: color;
   transition-property: color;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 nav#horizontal ul.linksul .links-mail:before {
@@ -139,9 +177,14 @@ nav#horizontal ul.linksul .links-mail:before {
   right: 0;
   bottom: 0;
   background: #C269A5;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
-  transition-duration: 0.3s;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 nav#horizontal ul.linksul .links-mail:hover, nav#horizontal ul.linksul .links-mail:focus, nav#horizontal ul.linksul .links-mail:active {
@@ -149,15 +192,19 @@ nav#horizontal ul.linksul .links-mail:hover, nav#horizontal ul.linksul .links-ma
 }
 
 nav#horizontal ul.linksul .links-mail:hover:before, nav#horizontal ul.linksul .links-mail:focus:before, nav#horizontal ul.linksul .links-mail:active:before {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 nav#horizontal ul.linksul li.links-linked {
   list-style: none;
   padding: 24px 0;
-  transform: perspective(1px) translateZ(0);
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-transition-property: color;
   transition-property: color;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 nav#horizontal ul.linksul .links-linked:before {
@@ -169,9 +216,14 @@ nav#horizontal ul.linksul .links-linked:before {
   right: 0;
   bottom: 0;
   background: #0577B4;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
-  transition-duration: 0.3s;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 nav#horizontal ul.linksul .links-linked:hover, nav#horizontal ul.linksul .links-linked:focus, nav#horizontal ul.linksul .links-linked:active {
@@ -179,15 +231,19 @@ nav#horizontal ul.linksul .links-linked:hover, nav#horizontal ul.linksul .links-
 }
 
 nav#horizontal ul.linksul .links-linked:hover:before, nav#horizontal ul.linksul .links-linked:focus:before, nav#horizontal ul.linksul .links-linked:active:before {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 nav#horizontal ul.linksul li.links-git {
   list-style: none;
   padding: 24px 0;
-  transform: perspective(1px) translateZ(0);
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-transition-property: color;
   transition-property: color;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 nav#horizontal ul.linksul .links-git:before {
@@ -199,9 +255,14 @@ nav#horizontal ul.linksul .links-git:before {
   right: 0;
   bottom: 0;
   background: #23292D;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
-  transition-duration: 0.3s;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 nav#horizontal ul.linksul .links-git:hover, nav#horizontal ul.linksul .links-git:focus, nav#horizontal ul.linksul .links-git:active {
@@ -209,7 +270,8 @@ nav#horizontal ul.linksul .links-git:hover, nav#horizontal ul.linksul .links-git
 }
 
 nav#horizontal ul.linksul .links-git:hover:before, nav#horizontal ul.linksul .links-git:focus:before, nav#horizontal ul.linksul .links-git:active:before {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 nav#horizontal a {
@@ -220,8 +282,12 @@ nav#horizontal a {
 }
 
 li.nametag {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 li.nametag img#logo {
@@ -234,11 +300,10 @@ li.nametag img#logo {
   position: fixed;
   right: 20px;
   bottom: 50px;
-  color: #C269A5;
+  color: #272626;
   background: none;
   border: none;
   cursor: pointer;
-  text-shadow: 0 0 20px black;
   z-index: 9999;
 }
 
@@ -252,7 +317,7 @@ main div.spacingDiv {
 
 main div.parallax {
   height: 50vh;
-  background-image: url("https://i.imgur.com/nxTi4Qv.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2017/04/14/16/43/red-fox-2230730_1280.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -261,7 +326,7 @@ main div.parallax {
 
 main div.parallaxOne {
   height: 100vh;
-  background-image: url("https://i.imgur.com/nxTi4Qv.jpg");
+  background-image: url("https://i.imgur.com/UPuip7i.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -275,10 +340,11 @@ main .name {
 
 main .name h1.sarah {
   color: #f2f2f2;
-  text-shadow: 0 0 20px black;
+  text-shadow: 2px 2px 4px black;
   font-size: 450%;
   font-family: 'Bowlby One';
   text-transform: uppercase;
+  letter-spacing: 10px;
   text-align: center;
 }
 
@@ -312,9 +378,10 @@ main img.meImg {
 main div.textBox {
   width: 100vw;
   font-family: 'Playfair Display';
-  color: black;
+  color: #2e3538;
   background-color: white;
   margin: 0;
+  font-size: 100px;
 }
 
 main div.textBox h1 {
@@ -328,16 +395,27 @@ main div.textBox h1 {
 }
 
 main div.textBox div.aboutMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 0;
 }
 
 main div.textBox div.aboutMe div.school {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   margin-right: 100px;
 }
@@ -358,7 +436,7 @@ main div.textBox div.aboutMe img.blackwhite {
 
 main div.textBox div.aboutMe p {
   padding: 20px 30px;
-  width: 60vw;
+  width: 95vw;
   font-weight: 500;
   font-size: 19px;
 }
@@ -372,13 +450,14 @@ main div.textBox div.aboutMe p span.red {
 }
 
 main div.textBox div.aboutMe p span.red a {
-  color: red;
+  color: #791501;
   text-decoration: none;
 }
 
 main div.textBox div.aboutMe p span.red a:hover {
   letter-spacing: .5px;
-  transition-duration: .5s;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 main div.textBox div.aboutMe p span.purple {
@@ -386,7 +465,7 @@ main div.textBox div.aboutMe p span.purple {
 }
 
 main div.textBox div.aboutMe p span.blue {
-  color: blue;
+  color: #0000cc;
 }
 
 main i {
@@ -394,10 +473,17 @@ main i {
 }
 
 main ul.skillsStuff {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: white;
   margin-right: 60px;
 }
@@ -405,12 +491,16 @@ main ul.skillsStuff {
 main ul.skillsStuff li {
   list-style: none;
   padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-transition: 1s;
   transition: 1s;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 main ul.skillsStuff li:hover {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 main ul.skillsStuff i {
@@ -429,13 +519,21 @@ div.skills h1 {
   width: 100vw;
 }
 
+.workPage {
+  background-color: #272626;
+}
+
 .workPage h1 {
   font-family: 'Bowlby One';
   padding: 20px;
   background-color: #2e3538;
   color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
 }
 
@@ -444,13 +542,49 @@ div.skills h1 {
   color: #c269a6;
 }
 
-.workPage img {
-  height: 300px;
-  width: 510px;
-}
-
 .workPage .logoWork {
   background-color: #272626;
+}
+
+.workPage .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+.workPage .column img {
+  vertical-align: middle;
+  height: 300px;
+  width: 500px !important;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .workPage .column img {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .workPage .column img {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 div.contact h1 {
@@ -462,10 +596,16 @@ div.contact h1 {
 }
 
 div.contact ul.linksul2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   font-family: 'Oleo Script', sans-serif;
   text-transform: lowercase;
   padding: 0;
@@ -482,11 +622,15 @@ div.contact ul.linksul2 li.links-fb {
   padding: 24px 0;
   display: inline-block;
   vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+          box-shadow: 0 0 1px transparent;
   position: relative;
+  -webkit-transition-property: color;
   transition-property: color;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 div.contact ul.linksul2 .links-fb:before {
@@ -498,11 +642,18 @@ div.contact ul.linksul2 .links-fb:before {
   right: 0;
   bottom: 0;
   background: #4367B0;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 div.contact ul.linksul2 .links-fb:hover, div.contact ul.linksul2 .links-fb:focus, div.contact ul.linksul2 .links-fb:active {
@@ -510,7 +661,8 @@ div.contact ul.linksul2 .links-fb:hover, div.contact ul.linksul2 .links-fb:focus
 }
 
 div.contact ul.linksul2 .links-fb:hover:before, div.contact ul.linksul2 .links-fb:focus:before, div.contact ul.linksul2 .links-fb:active:before {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 div.contact ul.linksul2 li.links-insta {
@@ -518,11 +670,15 @@ div.contact ul.linksul2 li.links-insta {
   padding: 24px 0;
   display: inline-block;
   vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+          box-shadow: 0 0 1px transparent;
   position: relative;
+  -webkit-transition-property: color;
   transition-property: color;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 div.contact ul.linksul2 .links-insta:before {
@@ -534,11 +690,18 @@ div.contact ul.linksul2 .links-insta:before {
   right: 0;
   bottom: 0;
   background: #C130A0;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 div.contact ul.linksul2 .links-insta:hover, div.contact ul.linksul2 .links-insta:focus, div.contact ul.linksul2 .links-insta:active {
@@ -546,7 +709,8 @@ div.contact ul.linksul2 .links-insta:hover, div.contact ul.linksul2 .links-insta
 }
 
 div.contact ul.linksul2 .links-insta:hover:before, div.contact ul.linksul2 .links-insta:focus:before, div.contact ul.linksul2 .links-insta:active:before {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 div.contact ul.linksul2 li.links-twitter {
@@ -554,11 +718,15 @@ div.contact ul.linksul2 li.links-twitter {
   padding: 24px 0;
   display: inline-block;
   vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+          box-shadow: 0 0 1px transparent;
   position: relative;
+  -webkit-transition-property: color;
   transition-property: color;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 div.contact ul.linksul2 .links-twitter:before {
@@ -570,11 +738,18 @@ div.contact ul.linksul2 .links-twitter:before {
   right: 0;
   bottom: 0;
   background: #21A1F0;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 div.contact ul.linksul2 .links-twitter:hover, div.contact ul.linksul2 .links-twitter:focus, div.contact ul.linksul2 .links-twitter:active {
@@ -582,7 +757,8 @@ div.contact ul.linksul2 .links-twitter:hover, div.contact ul.linksul2 .links-twi
 }
 
 div.contact ul.linksul2 .links-twitter:hover:before, div.contact ul.linksul2 .links-twitter:focus:before, div.contact ul.linksul2 .links-twitter:active:before {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 div.contact ul.linksul2 li.links-mail {
@@ -590,11 +766,15 @@ div.contact ul.linksul2 li.links-mail {
   padding: 24px 0;
   display: inline-block;
   vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+          box-shadow: 0 0 1px transparent;
   position: relative;
+  -webkit-transition-property: color;
   transition-property: color;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 div.contact ul.linksul2 .links-mail:before {
@@ -606,11 +786,18 @@ div.contact ul.linksul2 .links-mail:before {
   right: 0;
   bottom: 0;
   background: #C269A5;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 div.contact ul.linksul2 .links-mail:hover, div.contact ul.linksul2 .links-mail:focus, div.contact ul.linksul2 .links-mail:active {
@@ -618,7 +805,8 @@ div.contact ul.linksul2 .links-mail:hover, div.contact ul.linksul2 .links-mail:f
 }
 
 div.contact ul.linksul2 .links-mail:hover:before, div.contact ul.linksul2 .links-mail:focus:before, div.contact ul.linksul2 .links-mail:active:before {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 div.contact ul.linksul2 li.links-linked {
@@ -626,11 +814,15 @@ div.contact ul.linksul2 li.links-linked {
   padding: 24px 0;
   display: inline-block;
   vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+          box-shadow: 0 0 1px transparent;
   position: relative;
+  -webkit-transition-property: color;
   transition-property: color;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 div.contact ul.linksul2 .links-linked:before {
@@ -642,11 +834,18 @@ div.contact ul.linksul2 .links-linked:before {
   right: 0;
   bottom: 0;
   background: #0577B4;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 div.contact ul.linksul2 .links-linked:hover, div.contact ul.linksul2 .links-linked:focus, div.contact ul.linksul2 .links-linked:active {
@@ -654,7 +853,8 @@ div.contact ul.linksul2 .links-linked:hover, div.contact ul.linksul2 .links-link
 }
 
 div.contact ul.linksul2 .links-linked:hover:before, div.contact ul.linksul2 .links-linked:focus:before, div.contact ul.linksul2 .links-linked:active:before {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 div.contact ul.linksul2 li.links-git {
@@ -662,11 +862,15 @@ div.contact ul.linksul2 li.links-git {
   padding: 24px 0;
   display: inline-block;
   vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+          box-shadow: 0 0 1px transparent;
   position: relative;
+  -webkit-transition-property: color;
   transition-property: color;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 div.contact ul.linksul2 .links-git:before {
@@ -678,11 +882,18 @@ div.contact ul.linksul2 .links-git:before {
   right: 0;
   bottom: 0;
   background: #23292D;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 div.contact ul.linksul2 .links-git:hover, div.contact ul.linksul2 .links-git:focus, div.contact ul.linksul2 .links-git:active {
@@ -690,7 +901,8 @@ div.contact ul.linksul2 .links-git:hover, div.contact ul.linksul2 .links-git:foc
 }
 
 div.contact ul.linksul2 .links-git:hover:before, div.contact ul.linksul2 .links-git:focus:before, div.contact ul.linksul2 .links-git:active:before {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 div.contact a {
@@ -729,8 +941,12 @@ footer {
 }
 
 footer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 30px;
 }
 
@@ -768,9 +984,9 @@ footer .fab:hover, footer .fas:hover {
   color: #403f3f;
 }
 
-@media screen and (max-device-width: 600px) and (orientation: portrait) {
+@media screen and (max-width: 1200px) and (orientation: portrait) {
   [class*="workImg"] {
-    width: 100%;
+    width: auto !important;
   }
   div.school {
     display: none !important;
@@ -799,6 +1015,21 @@ footer .fab:hover, footer .fas:hover {
   }
   div.parallax {
     height: 250px !important;
+  }
+  main {
+    float: none !important;
+    width: auto !important;
+  }
+}
+
+@-webkit-keyframes floatDown {
+  from {
+    padding-top: 0;
+    opacity: 0;
+  }
+  to {
+    padding-top: 35vh;
+    opacity: 1;
   }
 }
 
