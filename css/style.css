@@ -14,6 +14,20 @@ html, body {
           box-sizing: content-box;
 }
 
+h1.banner {
+  font-family: 'Bowlby One';
+  padding: 20px;
+  background-color: #2e3538;
+  color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+}
+
 nav#horizontal {
   background-color: #2e3538;
   width: 100vw;
@@ -281,16 +295,7 @@ nav#horizontal a {
   padding: 20px;
 }
 
-li.nametag {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-li.nametag img#logo {
+img#logo {
   width: 100px;
   top: 0;
   padding-top: 15px;
@@ -317,7 +322,7 @@ main div.spacingDiv {
 
 main div.parallax {
   height: 50vh;
-  background-image: url("https://cdn.pixabay.com/photo/2017/04/14/16/43/red-fox-2230730_1280.jpg");
+  background-image: url("https://i.imgur.com/TYbVaa2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -367,112 +372,22 @@ main .name h2 {
   z-index: 9998;
 }
 
-main img.meImg {
-  background-color: #f2f2f2;
-  width: 900px;
-  height: 750px;
-  padding-top: 75px;
-  margin-left: -220px;
-}
-
 main div.textBox {
   width: 100vw;
   font-family: 'Playfair Display';
-  color: #2e3538;
+  color: black;
   background-color: white;
   margin: 0;
-  font-size: 100px;
+  font-size: 25px;
 }
 
-main div.textBox h1 {
-  font-family: 'Bowlby One';
-  padding: 20px;
-  background-color: #2e3538;
-  color: #f2f2f2;
-  width: 100vw;
-  z-index: 9999;
-  margin: 0;
-}
-
-main div.textBox div.aboutMe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 0;
-}
-
-main div.textBox div.aboutMe div.school {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0;
-  margin-right: 100px;
-}
-
-main div.textBox div.aboutMe img.westhills {
-  width: 250px;
-  height: 55px;
-}
-
-main div.textBox div.aboutMe img.geekwise {
-  width: 250px;
-  height: 200px;
-}
-
-main div.textBox div.aboutMe img.blackwhite {
-  height: 450px;
-}
-
-main div.textBox div.aboutMe p {
+main div.textBox p {
   padding: 20px 30px;
   width: 95vw;
   font-weight: 500;
-  font-size: 19px;
 }
 
-main div.textBox div.aboutMe p span {
-  font-weight: bold;
-}
-
-main div.textBox div.aboutMe p span.red {
-  color: red;
-}
-
-main div.textBox div.aboutMe p span.red a {
-  color: #791501;
-  text-decoration: none;
-}
-
-main div.textBox div.aboutMe p span.red a:hover {
-  letter-spacing: .5px;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
-}
-
-main div.textBox div.aboutMe p span.purple {
-  color: indigo;
-}
-
-main div.textBox div.aboutMe p span.blue {
-  color: #0000cc;
-}
-
-main i {
-  font-size: 30px;
-}
-
-main ul.skillsStuff {
+main ul.skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,7 +403,7 @@ main ul.skillsStuff {
   margin-right: 60px;
 }
 
-main ul.skillsStuff li {
+main ul.skills li {
   list-style: none;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -498,48 +413,20 @@ main ul.skillsStuff li {
           transform-style: preserve-3d;
 }
 
-main ul.skillsStuff li:hover {
+main ul.skills li:hover {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-main ul.skillsStuff i {
+main ul.skills i {
   font-size: 100px;
 }
 
-div.skills {
-  background-color: white;
-}
-
-div.skills h1 {
-  font-family: 'Bowlby One';
-  padding: 20px;
-  background-color: #2e3538;
-  color: #f2f2f2;
-  width: 100vw;
-}
-
-.workPage {
-  background-color: #272626;
-}
-
-.workPage h1 {
-  font-family: 'Bowlby One';
-  padding: 20px;
-  background-color: #2e3538;
-  color: #f2f2f2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0;
-}
-
-.workPage h1 a {
+.workPage a {
   padding-right: 20px;
   color: #c269a6;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
 }
 
 .workPage .logoWork {
@@ -558,6 +445,7 @@ div.skills h1 {
           flex-direction: row;
   padding: 0;
   margin: 0;
+  background-color: transparent;
 }
 
 .workPage .column img {
@@ -585,14 +473,6 @@ div.skills h1 {
     max-width: 100%;
     width: 100%;
   }
-}
-
-div.contact h1 {
-  font-family: 'Bowlby One';
-  padding: 20px;
-  background-color: #2e3538;
-  color: #f2f2f2;
-  width: 100vw;
 }
 
 div.contact ul.linksul2 {
@@ -922,8 +802,12 @@ div.contact i {
 
 .footerTwo {
   background-color: #454f54;
-  height: 200px;
+  height: 50px;
   width: 100vw;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 10px;
 }
 
 .footerTwo p {
@@ -985,14 +869,11 @@ footer .fab:hover, footer .fas:hover {
 }
 
 @media screen and (max-width: 1200px) and (orientation: portrait) {
+  body {
+    overflow-y: hidden !important;
+  }
   [class*="workImg"] {
     width: auto !important;
-  }
-  div.school {
-    display: none !important;
-  }
-  img.blackwhite {
-    display: none !important;
   }
   div.aboutMe p {
     width: 100vw !important;
@@ -1008,9 +889,9 @@ footer .fab:hover, footer .fas:hover {
     display: none !important;
   }
   h1.sarah {
-    font-size: 35px !important;
+    font-size: 25px !important;
     width: 100vw !important;
-    margin-top: 50px;
+    margin-top: 100px !important;
     height: 100vw !important;
   }
   div.parallax {
@@ -1019,6 +900,20 @@ footer .fab:hover, footer .fas:hover {
   main {
     float: none !important;
     width: auto !important;
+  }
+  p {
+    padding: 0 !important;
+  }
+  h1.banner {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  a.resume {
+    display: none;
+  }
+  .contact {
+    display: none;
   }
 }
 

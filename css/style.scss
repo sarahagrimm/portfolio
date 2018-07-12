@@ -20,8 +20,16 @@ html, body {
     box-sizing: content-box;
 }
 
-
-
+h1.banner {
+        font-family: 'Bowlby One';
+        padding: 20px;
+        background-color: $blueblack;
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    
+}
 
 //Navigation
 nav#horizontal {
@@ -227,17 +235,13 @@ nav#horizontal {
             
         }}
 
-    li.nametag {
-        display: flex;
-        align-items: center;
-
     img#logo{
         width: 100px;
         top: 0;
         padding-top: 15px;
         
     }
-}
+
 
 .up {
     position: fixed;
@@ -262,7 +266,7 @@ main {
 
     div.parallax {
         height: 50vh;
-        background-image: url('https://cdn.pixabay.com/photo/2017/04/14/16/43/red-fox-2230730_1280.jpg');
+        background-image: url('https://i.imgur.com/TYbVaa2.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -316,105 +320,23 @@ main {
         
     }
 
-    img.meImg {
-        background-color: $white;
-        width: 900px;
-        height: 750px;
-        padding-top: 75px;
-        margin-left: -220px;
-    }
-
     div.textBox {
         width: 100vw;
         font-family: 'Playfair Display';
-        color: $blueblack;
+        color: black;
         background-color: white;
         margin: 0;
-        font-size: 100px;
-
-
-        h1 {
-            font-family: 'Bowlby One';
-            padding: 20px;
-            background-color: $blueblack;
-            color: $white;
-            width: 100vw;
-            z-index: 9999;
-            margin: 0;
-
-        }
-
-        div.aboutMe {
-            display: flex;
-            flex-direction: row;
-            // justify-content: space-around;
-            margin: 0;
-            // width: 100vw;
-            
-
-
-            div.school {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 0;
-                margin-right: 100px;
-            }
-
-            img.westhills {
-                width: 250px;
-                height: 55px;
-                // position: absolute;
-            }
-            img.geekwise {
-                // position: absolute;
-                width: 250px;
-                height: 200px;
-            }
-
-        img.blackwhite {
-            height: 450px;
-        }
-
-
+        font-size: 25px;
 
         p {
             padding: 20px 30px;
             width: 95vw;
             font-weight: 500;
-            font-size: 19px;
-                    span {
-            font-weight: bold;
-        }
-                    span.red {
-                        color: red;
-                        a {
-                            color: hsl(10, 98%, 24%);
-                            text-decoration: none;
-                        }
-
-                        a:hover {
-                            letter-spacing: .5px;
-                            transition-duration: .5s;
-                        }
-                    }
-                    span.purple {
-                        color: indigo;
-                    }
-                    span.blue {
-                        color: hsl(240, 100%, 40%);
-                    }
-                
-                
-        }
     }
-    }
-    i {
-        font-size: 30px;
     }
 
    
-    ul.skillsStuff {
+    ul.skills {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -441,38 +363,16 @@ main {
     }
 
 
-
-
-div.skills {
-    background-color: white;
-    h1 {
-        font-family: 'Bowlby One';
-        padding: 20px;
-        background-color: $blueblack;
-        color: $white;
-        width: 100vw;
-    }
-}
-
-
+// WORK
 
 .workPage {
-    background-color: $black;
-
-    h1 {
-        font-family: 'Bowlby One';
-        padding: 20px;
-        background-color: $blueblack;
-        color: $white;
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
 
         a {
             padding-right: 20px;
             color: rgb(194, 105, 166);
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
         }
-    }
 
 .logoWork {
     background-color: $black;
@@ -484,6 +384,7 @@ div.skills {
     flex-direction: row;
     padding: 0;
     margin: 0;
+    background-color: transparent;
 }
 
 .column img {
@@ -510,17 +411,10 @@ div.skills {
   }
 }
 
-// WORK
 
 
 div.contact {
-    h1 {
-        font-family: 'Bowlby One';
-        padding: 20px;
-        background-color: $blueblack;
-        color: $white;
-        width: 100vw;
-    }
+
     ul.linksul2{
         display: flex;
         justify-content: center;
@@ -778,8 +672,12 @@ div.contact {
 
 .footerTwo {
     background-color: lighten($blueblack, 10%);
-    height: 200px;
+    height: 50px;
     width: 100vw;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 10px;
     p {
         color: $white;
         text-align: center;
@@ -862,17 +760,19 @@ li{
 
     // MOBILE ONLY
     @media screen and (max-width: 1200px) and (orientation: portrait){
-        
+        body { overflow-y: hidden !important; }
         [class*="workImg"] { width: auto !important; }
-        div.school { display: none !important; }
-        img.blackwhite { display: none !important; }
         div.aboutMe { p { width: 100vw !important; text-align: center; } }
         nav#horizontal { height: 55px !important; }
         img#logo { width: 75px !important; }
         div.spacingDiv { display: none !important; }
-        h1.sarah { font-size: 35px !important; width: 100vw !important; margin-top: 50px; height: 100vw !important;}
+        h1.sarah { font-size: 25px !important; width: 100vw !important; margin-top: 100px !important; height: 100vw !important;}
         div.parallax { height: 250px !important; }
         main { float: none !important; width: auto !important; }
+        p { padding: 0 !important; }
+        h1.banner { justify-content: center !important; }
+        a.resume { display: none; }
+        .contact { display: none; }
       }
 
 @keyframes floatDown {
