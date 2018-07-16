@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Karma:300,400,500,600,700|Playfair+Display|Fjalla+One|Ribeye|Erica+One|Passion+One|Bowlby+One|Peralta|Poppins|Oleo+Script|Yeseva+One|Lobster|Abril+Fatface|Luckiest+Guy|Elsie|Titan+One|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Fjalla+One|Bowlby+One");
 @import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
 @import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css");
@@ -387,39 +387,40 @@ main div.textBox p {
   font-weight: 500;
 }
 
-main ul.skills {
+main table.skills {
+  background-color: white;
+}
+
+main table.skills tr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: white;
-  margin-right: 60px;
 }
 
-main ul.skills li {
-  list-style: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
+main table.skills tr td {
+  padding: 12px;
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  width: 100px;
+  text-align: center;
+  font-family: 'Oleo Script', serif;
 }
 
-main ul.skills li:hover {
+main table.skills tr td i {
+  font-size: 100px;
+}
+
+main table.skills tr td:hover {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-main ul.skills i {
-  font-size: 100px;
+.workPage {
+  background-color: black;
 }
 
 .workPage a {
@@ -472,6 +473,7 @@ main ul.skills i {
             flex: 100%;
     max-width: 100%;
     width: 100%;
+    height: 200px;
   }
 }
 
@@ -504,8 +506,8 @@ div.contact ul.linksul2 li.links-fb {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px transparent;
-          box-shadow: 0 0 1px transparent;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   -webkit-transition-property: color;
   transition-property: color;
@@ -552,8 +554,8 @@ div.contact ul.linksul2 li.links-insta {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px transparent;
-          box-shadow: 0 0 1px transparent;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   -webkit-transition-property: color;
   transition-property: color;
@@ -600,8 +602,8 @@ div.contact ul.linksul2 li.links-twitter {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px transparent;
-          box-shadow: 0 0 1px transparent;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   -webkit-transition-property: color;
   transition-property: color;
@@ -648,8 +650,8 @@ div.contact ul.linksul2 li.links-mail {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px transparent;
-          box-shadow: 0 0 1px transparent;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   -webkit-transition-property: color;
   transition-property: color;
@@ -696,8 +698,8 @@ div.contact ul.linksul2 li.links-linked {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px transparent;
-          box-shadow: 0 0 1px transparent;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   -webkit-transition-property: color;
   transition-property: color;
@@ -744,8 +746,8 @@ div.contact ul.linksul2 li.links-git {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px transparent;
-          box-shadow: 0 0 1px transparent;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   -webkit-transition-property: color;
   transition-property: color;
@@ -800,7 +802,7 @@ div.contact i {
   font-size: 50%;
 }
 
-.footerTwo {
+footer {
   background-color: #454f54;
   height: 50px;
   width: 100vw;
@@ -810,62 +812,25 @@ div.contact i {
   font-size: 10px;
 }
 
-.footerTwo p {
+footer p {
   color: #f2f2f2;
   text-align: center;
   font-family: 'Playfair Display', serif;
 }
 
-footer {
-  background-color: #2e3538;
-  width: 100vw;
-  position: fixed;
-  z-index: 9999;
-  bottom: 0;
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
 }
 
-footer span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 30px;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2e3538;
 }
 
-footer h5 {
-  font-family: 'Oswald', sans-serif;
-  color: #f2f2f2;
-  display: inline;
-  font-size: 70%;
-  margin-left: -30px;
-  padding-bottom: .5vh;
-}
-
-footer .footerUl {
-  bottom: 0;
-  padding-right: 30px;
-  margin: 0;
-}
-
-footer ul {
-  display: inline;
-}
-
-footer li {
-  display: inline;
-}
-
-footer i {
-  color: #f2f2f2;
-  padding-top: 6px;
-  padding-left: 10px;
-  font-size: 90%;
-}
-
-footer .fab:hover, footer .fas:hover {
-  color: #403f3f;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: indigo;
 }
 
 @media screen and (max-width: 1200px) and (orientation: portrait) {
