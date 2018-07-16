@@ -275,7 +275,7 @@ main {
 
     div.parallaxOne {
         height: 100vh;
-        background-image: url('https://i.imgur.com/r932Qcs.jpg');
+        background-image: url('https://i.imgur.com/Gv56UPg.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -413,6 +413,9 @@ main {
   }
 }
 
+div.reviews {
+  width: 100vw;
+}
 
 
 div.contact {
@@ -707,8 +710,8 @@ footer {
         nav#horizontal { height: 55px !important; }
         img#logo { width: 55px !important; }
         div.spacingDiv { display: none !important; }
-        h1.sarah { font-size: 25px !important; width: 100vw !important; margin-top: 100px !important; height: 100vw !important;}
-        div.parallax { height: 250px !important; }
+        h1.sarah { font-size: 25px !important; width: 100vw !important; margin-top: 50px !important; height: 100vw !important;}
+        // div.parallax { height: 250px !important; }
         main { float: none !important; width: auto !important; }
         p { padding: 0 !important; }
         h1.banner { justify-content: center !important; }
