@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Fjalla+One|Bowlby+One");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Bowlby+One");
 @import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
 @import url("https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css");
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css");
@@ -322,7 +322,7 @@ main div.spacingDiv {
 
 main div.parallax {
   height: 50vh;
-  background-image: url("https://i.imgur.com/TYbVaa2.jpg");
+  background-image: url("https://i.imgur.com/Lpc1VAr.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -331,7 +331,16 @@ main div.parallax {
 
 main div.parallaxOne {
   height: 100vh;
-  background-image: url("https://i.imgur.com/UPuip7i.jpg");
+  background-image: url("https://i.imgur.com/Gv56UPg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main div.parallaxTwo {
+  height: 50vh;
+  background-image: url("https://cdn.pixabay.com/photo/2014/05/02/23/46/new-york-city-336475_1280.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -339,7 +348,7 @@ main div.parallaxOne {
 }
 
 main .name {
-  margin-top: 100px;
+  margin-top: 150px;
   position: absolute;
 }
 
@@ -360,18 +369,6 @@ main .name p {
   text-shadow: 0 0 20px black;
 }
 
-main .name h2 {
-  width: 60vw;
-  color: #f2f2f2;
-  text-align: center;
-  font-family: 'Playfair Display';
-  margin-top: 150px;
-  font-size: 30px;
-  position: absolute;
-  opacity: 1;
-  z-index: 9998;
-}
-
 main div.textBox {
   width: 100vw;
   font-family: 'Playfair Display';
@@ -383,8 +380,23 @@ main div.textBox {
 
 main div.textBox p {
   padding: 20px 30px;
-  width: 95vw;
+  width: 80vw;
   font-weight: 500;
+  text-align: center;
+}
+
+main div.textBox div.aboutMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main table.skills {
@@ -397,17 +409,27 @@ main table.skills tr {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 main table.skills tr td {
-  padding: 12px;
+  padding: 20px;
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  width: 100px;
   text-align: center;
-  font-family: 'Oleo Script', serif;
+  font-family: 'Bowlby One', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #272626;
 }
 
 main table.skills tr td i {
@@ -419,46 +441,25 @@ main table.skills tr td:hover {
           transform: rotateY(180deg);
 }
 
-.workPage {
-  background-color: black;
-}
-
 .workPage a {
-  padding-right: 20px;
-  color: #c269a6;
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
+  color: skyblue;
+  font-size: 40px;
 }
 
 .workPage .logoWork {
   background-color: #272626;
 }
 
-.workPage .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-}
-
-.workPage .column img {
+.workPage .grid img {
   vertical-align: middle;
   height: 300px;
-  width: 500px !important;
+  width: 33vw;
   padding: 0;
-  margin: 0;
+  margin: 0 -3px;
 }
 
 @media screen and (max-width: 800px) {
-  .workPage .column img {
+  .workPage .grid img {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
             flex: 50%;
@@ -467,7 +468,7 @@ main table.skills tr td:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .workPage .column img {
+  .workPage .grid img {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
@@ -803,19 +804,12 @@ div.contact i {
 }
 
 footer {
-  background-color: #454f54;
-  height: 50px;
+  background-color: #2e3538;
   width: 100vw;
   color: white;
   font-family: 'Playfair Display', serif;
   text-align: center;
-  font-size: 10px;
-}
-
-footer p {
-  color: #f2f2f2;
-  text-align: center;
-  font-family: 'Playfair Display', serif;
+  padding: 10px;
 }
 
 /* Scrollbar */
@@ -879,6 +873,12 @@ footer p {
   }
   .contact {
     display: none;
+  }
+  div.textBox {
+    height: 100% !important;
+  }
+  img.workImg {
+    width: 100vw !important;
   }
 }
 

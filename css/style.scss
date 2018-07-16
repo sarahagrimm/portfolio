@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Fjalla+One|Bowlby+One');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Bowlby+One');
 
 @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
 @import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
@@ -266,7 +266,8 @@ main {
 
     div.parallax {
         height: 50vh;
-        background-image: url('https://i.imgur.com/TYbVaa2.jpg');
+        // background-image: url('https://i.imgur.com/TYbVaa2.jpg');
+        background-image: url('https://i.imgur.com/Lpc1VAr.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -275,15 +276,25 @@ main {
 
     div.parallaxOne {
         height: 100vh;
-        background-image: url('https://i.imgur.com/UPuip7i.jpg');
+        // background-image: url('https://i.imgur.com/UPuip7i.jpg');
+        background-image: url('https://i.imgur.com/Gv56UPg.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
+    div.parallaxTwo {
+      height: 50vh;
+      background-image: url('https://cdn.pixabay.com/photo/2014/05/02/23/46/new-york-city-336475_1280.jpg');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
     .name {
-        margin-top: 100px;
+        margin-top: 150px;
         position: absolute;
         
         h1.sarah {
@@ -304,19 +315,6 @@ main {
             text-shadow: 0 0 20px black;
 
         }
-
-            h2 {
-                width: 60vw;
-                color: $white;
-                text-align: center;
-                font-family: 'Playfair Display';
-                margin-top: 150px;
-                font-size: 30px;
-                position: absolute;
-                opacity: 1;
-                z-index: 9998;
-
-        }
         
     }
 
@@ -327,11 +325,20 @@ main {
         background-color: white;
         margin: 0;
         font-size: 25px;
+        // height: 100vh;
 
         p {
             padding: 20px 30px;
-            width: 95vw;
+            width: 80vw;
             font-weight: 500;
+            text-align: center;
+    }
+
+    div.aboutMe {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
     }
     }
 
@@ -343,13 +350,18 @@ main {
         tr {
             display: flex;
             flex-wrap: wrap;
+            width: 100vw;
+            justify-content: space-around;
         td {
-            padding: 12px;
+            padding: 20px;
             transition: 1s;
             transform-style: preserve-3d;
-            width: 100px;
+            // width: 100px;
             text-align: center;
-            font-family: 'Oleo Script', serif;
+            font-family: 'Bowlby One', sans-serif;
+            display: flex;
+            flex-direction: column;
+            color: $black;
 
             i {
                 font-size: 100px;
@@ -366,45 +378,34 @@ main {
 // WORK
 
 .workPage {
-    background-color: black;
 
         a {
-            padding-right: 20px;
-            color: rgb(194, 105, 166);
-            font-family: 'Playfair Display', serif;
-            font-size: 30px;
+            color: skyblue;
+            font-size: 40px;
         }
 
 .logoWork {
     background-color: $black;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-}
 
-.column img {
+.grid img {
     vertical-align: middle;
     height: 300px;
-    width: 500px !important;
+    width: 33vw;
     padding: 0;
-    margin: 0;
+    margin: 0 -3px;
   }
 
   @media screen and (max-width: 800px) {
-    .column img {
+    .grid img {
       flex: 50%;
       max-width: 100%;
     }
   }
 
   @media screen and (max-width: 600px) {
-    .column img {
+    .grid img {
       flex: 100%;
       max-width: 100%;
       width: 100%;
@@ -673,18 +674,12 @@ div.contact {
 
 
 footer {
-    background-color: lighten($blueblack, 10%);
-    height: 50px;
+    background-color: $blueblack;
     width: 100vw;
     color: white;
     font-family: 'Playfair Display', serif;
     text-align: center;
-    font-size: 10px;
-    p {
-        color: $white;
-        text-align: center;
-        font-family: 'Playfair Display', serif;
-    }
+    padding: 10px;
 }
 
     
@@ -720,6 +715,8 @@ footer {
         h1.banner { justify-content: center !important; }
         a.resume { display: none; }
         .contact { display: none; }
+        div.textBox { height: 100% !important; }
+        img.workImg { width: 100vw !important; }
       }
 
 @keyframes floatDown {
