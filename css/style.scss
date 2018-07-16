@@ -294,6 +294,7 @@ main {
     .name {
         margin-top: 150px;
         position: absolute;
+        width: 100vw;
         
         h1.sarah {
             color: $white;
@@ -715,6 +716,7 @@ footer {
         .contact { display: none; }
         div.textBox { height: 100% !important; }
         img.workImg { width: 100vw !important; }
+        .up { display: none !important; }
       }
 
 @keyframes floatDown {

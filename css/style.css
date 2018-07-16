@@ -350,6 +350,7 @@ main div.parallaxTwo {
 main .name {
   margin-top: 150px;
   position: absolute;
+  width: 100vw;
 }
 
 main .name h1.sarah {
@@ -879,6 +880,9 @@ footer {
   }
   img.workImg {
     width: 100vw !important;
+  }
+  .up {
+    display: none !important;
   }
 }
 
