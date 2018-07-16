@@ -296,9 +296,9 @@ nav#horizontal a {
 }
 
 img#logo {
-  width: 100px;
+  width: 75px;
   top: 0;
-  padding-top: 15px;
+  padding-top: 18px;
 }
 
 .up {
@@ -843,7 +843,7 @@ footer {
     height: 55px !important;
   }
   img#logo {
-    width: 75px !important;
+    width: 55px !important;
   }
   div.spacingDiv {
     display: none !important;
